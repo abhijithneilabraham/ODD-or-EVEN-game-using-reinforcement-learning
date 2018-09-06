@@ -28,7 +28,7 @@ def load_datasets():
     y=np.array(y)
     return X,y
 
-label = os.listdir("dataset_image")
+label = os.listdir("images")
 save_label = open("int_to_word_out.pickle","wb")
 pickle.dump(label, save_label)
 save_label.close()
